@@ -1,0 +1,27 @@
+package com.example.devops;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HomeController {
+
+    @GetMapping("/")
+    public String home() {
+        return "index"; 
+    }
+}
+
+
+
+
+
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>DevOps Spring Web</title>
+</head>
+<body>
+    <h1>Welcome to DevOps Spring Boot Web App!</h1>
+</body>
+</html>
